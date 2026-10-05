@@ -29,7 +29,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.05
+        time: 0.083333336
         value: {x: 0.19177094, y: 0.19996719, z: 0.19996719}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -38,7 +38,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.1
+        time: 0.16666667
         value: {x: 0.19177094, y: 0.19996719, z: 0.19996719}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -55,11 +55,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 4820675831172252594, guid: 896b09cce8e92d04bb99192b7ae4f940, type: 3}
-    - time: 0.05
-      value: {fileID: -755109533315314770, guid: 57da8c7bcab77fa4f8b29e1124720ff3, type: 3}
-    - time: 0.1
-      value: {fileID: -8410910322352468237, guid: 6a4d134cef6cbdc4ebf4ef660a3471b6, type: 3}
+      value: {fileID: 21300000, guid: b430d81e4d18194488826d1e69f33e97, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 17e5793153bfb8f48a211ba6fed10796, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: c038727c41c094d458fae36f48dc1a73, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -91,15 +91,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 4820675831172252594, guid: 896b09cce8e92d04bb99192b7ae4f940, type: 3}
-    - {fileID: -755109533315314770, guid: 57da8c7bcab77fa4f8b29e1124720ff3, type: 3}
-    - {fileID: -8410910322352468237, guid: 6a4d134cef6cbdc4ebf4ef660a3471b6, type: 3}
+    - {fileID: 21300000, guid: b430d81e4d18194488826d1e69f33e97, type: 3}
+    - {fileID: 21300000, guid: 17e5793153bfb8f48a211ba6fed10796, type: 3}
+    - {fileID: 21300000, guid: c038727c41c094d458fae36f48dc1a73, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.11666667
+    m_StopTime: 0.18333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -129,7 +129,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.05
+        time: 0.083333336
         value: 0.19177094
         inSlope: 0
         outSlope: 0
@@ -138,7 +138,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.1
+        time: 0.16666667
         value: 0.19177094
         inSlope: 0
         outSlope: 0
@@ -168,7 +168,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.05
+        time: 0.083333336
         value: 0.19996719
         inSlope: 0
         outSlope: 0
@@ -177,7 +177,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.1
+        time: 0.16666667
         value: 0.19996719
         inSlope: 0
         outSlope: 0
@@ -207,7 +207,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.05
+        time: 0.083333336
         value: 0.19996719
         inSlope: 0
         outSlope: 0
@@ -216,7 +216,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.1
+        time: 0.16666667
         value: 0.19996719
         inSlope: 0
         outSlope: 0
@@ -235,4 +235,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

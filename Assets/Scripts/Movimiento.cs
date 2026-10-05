@@ -31,7 +31,8 @@ public class Movimiento : MonoBehaviour
     // para correr [serializeField] private float velocidadSprint = 10f;
     [SerializeField] private string triggerGolpe = "GolpeCaballero";
     [SerializeField] private TipoPersonaje personaje ;
-
+    public AudioSource miAudioSource;
+    public AudioClip espada;
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
@@ -77,9 +78,13 @@ public class Movimiento : MonoBehaviour
             movimientoHorizontal = 0;
         }
 
+        animator.SetFloat("speed", Mathf.Abs(movimientoHorizontal));
+
+
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             DarGolpe();
-        
+        }
     }
 
 
@@ -103,6 +108,8 @@ public class Movimiento : MonoBehaviour
         {
             movimientoHorizontal = 0;
         }
+
+        animator.SetFloat("speedelf", Mathf.Abs(movimientoHorizontal));
 
         if (Input.GetKeyDown(KeyCode.RightControl))
             DarGolpe();
@@ -140,12 +147,21 @@ public class Movimiento : MonoBehaviour
 
     void DarGolpe()
     {
-        if (animator != null)
+        if (animator != null && espada != null && miAudioSource != null)
+        {
 
-        if (personaje == TipoPersonaje.Caballero)
-           animator.SetTrigger("GolpeCaballero");
-        else
-           animator.SetTrigger("GolpeElfo");
+            if (personaje == TipoPersonaje.Caballero)
+            {
+                animator.SetTrigger("GolpeCaballero");
+                miAudioSource.PlayOneShot(espada);
+            }
+            else
+            {
+                animator.SetTrigger("GolpeElfo");
+                miAudioSource.PlayOneShot(espada);
+            }
+        }
+
     }
 
 
